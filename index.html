@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halaman review - OPTIK_JKT_ID</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      color: #ff7b00;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .product-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .product-card {
+      background: linear-gradient(145deg, #ffffff, #f9f9f9);
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      border: 2px solid #ff7b00;
+    }
+
+    .product-card h2 {
+      margin: 10px 0 5px;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .product-card p {
+      margin: 5px 0 15px;
+      color: #555;
+      font-weight: 500;
+    }
+
+    .info-section {
+      max-width: 800px;
+      margin: 40px auto 20px;
+      text-align: center;
+    }
+
+    .info-section button {
+      background: linear-gradient(90deg, #ff7b00, #ff9500);
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      margin: 5px;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .info-section button:hover {
+      background: linear-gradient(90deg, #ff9500, #ff7b00);
+      transform: scale(1.05);
+    }
+
+    .sop-panel {
+      margin-top: 10px;
+      font-size: 16px;
+      color: red;
+      font-weight: bold;
+    }
+
+    @media(max-width: 500px){
+      .product-card img {
+        height: 150px;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<h1>OPTIK_JKT_ID MADE IN COLOMBIA</h1>
+
+<div class="product-container">
+
+  <!-- Produk 1 -->
+  <div class="product-card">
+    <img src="bako1.png" alt="Produk 1">
+    <h2>Virginia</h2>
+    <p>PREMIUM PAKET</p>
+  </div>
+
+  <!-- Produk 2 -->
+  <div class="product-card">
+    <img src="bako1.png" alt="Produk 2">
+    <h2>Burley</h2>
+    <p>HIGH QUALITY PAKET</p>
+  </div>
+
+  <!-- Produk 3 -->
+  <div class="product-card">
+    <img src="bako1.png" alt="Produk 3">
+    <h2>Burley</h2>
+    <p>HIGH QUALITY PAKET</p>
+  </div>
+
+  <!-- Produk 4 -->
+  <div class="product-card">
+    <img src="bako1.png" alt="Produk 4">
+    <h2>Burley</h2>
+    <p>HIGH QUALITY PAKET</p>
+  </div>
+
+  <!-- Produk 5 -->
+  <div class="product-card">
+    <img src="bako1.png" alt="Produk 5">
+    <h2>Dark Air-Cured</h2>
+    <p>THE BEST QUALITY</p>
+  </div>
+
+  <!-- Produk 6 -->
+  <div class="product-card">
+    <img src="bako1.png" alt="Produk 6">
+    <h2>Burley</h2>
+    <p>HIGH QUALITY PAKET</p>
+  </div>
+
+  <!-- Produk 7 -->
+  <div class="product-card">
+    <img src="bako1.png" alt="Produk 7">
+    <h2>Burley</h2>
+    <p>HIGH QUALITY PAKET</p>
+  </div>
+
+</div> <!-- penutup product-container -->
+
+<!-- SOP & Video Section -->
+<div class="info-section">
+  <button onclick="showSOP()">SOP Pembelian</button>
+  <div class="sop-panel" id="sopPanel"></div>
+
+  <button onclick="window.location.href='review.html'">Cek Video Review</button>
+</div>
+
+<script>
+function showSOP() {
+  const sop = document.getElementById('sopPanel');
+  if (sop.innerHTML === "") {
+    sop.innerHTML = "JADILAH PEMBELI YANG BIJAK HIGH PRIVASI, JAGA KEAMANAN, DAN JADILAH SMART BUYER!";
+  } else {
+    sop.innerHTML = "";
+  }
+}
+</script>
+
+</body>
+</html>
