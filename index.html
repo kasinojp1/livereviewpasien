@@ -3,23 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Halaman review - OOPTIK_JKT_ID</title>
+  <title>Halaman Review - OPTIK_JKT_ID</title>
+
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+      font-family: "Poppins", sans-serif;
       margin: 0;
       padding: 20px;
+      background: radial-gradient(circle at top, #0d1b2a, #000814);
+      color: white;
     }
 
     h1 {
       text-align: center;
       margin-bottom: 40px;
-      font-size: 2.5rem;
-      color: #ff7b00;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #67d1ff;
+      text-shadow: 0 0 15px rgba(0,150,255,0.9);
     }
 
     .product-container {
@@ -30,20 +33,21 @@
       margin: 0 auto;
     }
 
+    /* Kartu produk modern dengan efek glass dan lighting biru */
     .product-card {
-      background: linear-gradient(145deg, #ffffff, #f9f9f9);
+      background: rgba(255,255,255,0.05);
       border-radius: 15px;
       padding: 20px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(0,150,255,0.4);
+      box-shadow: 0 0 20px rgba(0,150,255,0.25);
+      transition: transform 0.3s ease, box-shadow 0.4s ease;
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      transition: transform 0.3s, box-shadow 0.3s;
     }
 
     .product-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+      transform: translateY(-7px);
+      box-shadow: 0 0 25px rgba(0,150,255,0.7);
     }
 
     .product-card img {
@@ -52,29 +56,31 @@
       object-fit: cover;
       border-radius: 12px;
       margin-bottom: 15px;
-      border: 2px solid #ff7b00;
+      border: 2px solid #009dff;
+      box-shadow: 0 0 15px rgba(0,150,255,0.4);
     }
 
     .product-card h2 {
+      font-size: 1.6rem;
       margin: 10px 0 5px;
-      font-size: 1.5rem;
-      color: #333;
+      color: #67d1ff;
+      text-shadow: 0 0 10px rgba(0,150,255,0.8);
     }
 
     .product-card p {
-      margin: 5px 0 15px;
-      color: #555;
-      font-weight: 500;
+      margin: 5px 0 10px;
+      color: #c9f1ff;
+      font-weight: 400;
     }
 
+    /* Tombol neon */
     .info-section {
-      max-width: 800px;
-      margin: 40px auto 20px;
       text-align: center;
+      margin-top: 40px;
     }
 
     .info-section button {
-      background: linear-gradient(90deg, #ff7b00, #ff9500);
+      background: linear-gradient(90deg, #0066ff, #00c3ff);
       color: white;
       padding: 12px 20px;
       border: none;
@@ -83,78 +89,79 @@
       font-weight: 600;
       cursor: pointer;
       margin: 5px;
-      transition: background 0.3s, transform 0.2s;
+      box-shadow: 0 0 15px rgba(0,150,255,0.8);
+      transition: 0.2s;
     }
 
     .info-section button:hover {
-      background: linear-gradient(90deg, #ff9500, #ff7b00);
-      transform: scale(1.05);
+      transform: scale(1.08);
+      box-shadow: 0 0 20px rgba(0,150,255,1);
     }
 
     .sop-panel {
-      margin-top: 10px;
+      margin-top: 12px;
       font-size: 16px;
-      color: red;
       font-weight: bold;
+      color: #ff4444;
+      text-shadow: 0 0 10px red;
     }
 
-    @media(max-width: 500px){
+    @media (max-width: 500px) {
       .product-card img {
         height: 150px;
       }
       h1 {
-        font-size: 2rem;
+        font-size: 1.9rem;
       }
     }
   </style>
 </head>
 <body>
 
-<h1>Halaman review - OPTIK_JKT_ID</h1>
+  <h1>Halaman Review - OPTIK_JKT_ID</h1>
 
-<div class="product-container">
+  <div class="product-container">
 
-  <!-- Produk 1 -->
-  <div class="product-card">
-    <img src="best1.png" alt="Produk 1">
-    <h2>Dark Air-Cured</h2>
-    <p>THE BEST QUALITY</p>
+    <!-- Produk 1 -->
+    <div class="product-card">
+      <img src="best1.png" alt="Produk 1">
+      <h2>Dark Air-Cured</h2>
+      <p>THE BEST QUALITY</p>
+    </div>
+
+    <!-- Produk 2 -->
+    <div class="product-card">
+      <img src="Virginia.png" alt="Produk 2">
+      <h2>Virginia</h2>
+      <p>PREMIUM PAKET</p>
+    </div>
+
+    <!-- Produk 3 -->
+    <div class="product-card">
+      <img src="Burley1.png" alt="Produk 3">
+      <h2>Burley</h2>
+      <p>HIGH QUALITY PAKET</p>
+    </div>
+
   </div>
 
-  <!-- Produk 2 -->
-  <div class="product-card">
-    <img src="Virginia.png" alt="Produk 2">
-    <h2>Virginia</h2>
-    <p>PREMIUM PAKET</p>
+  <div class="info-section">
+    <button onclick="showSOP()">SOP Pembelian</button>
+    <div class="sop-panel" id="sopPanel"></div>
+
+    <button onclick="window.location.href='review.html'">Cek Video Review</button>
   </div>
 
-  <!-- Produk 3 -->
-  <div class="product-card">
-    <img src="Burley1.png" alt="Produk 3">
-    <h2>Burley</h2>
-    <p>HIGH QUALITY PAKET</p>
-  </div>
-  
-</div> <!-- penutup product-container -->
-
-<!-- SOP & Video Section -->
-<div class="info-section">
-  <button onclick="showSOP()">SOP Pembelian</button>
-  <div class="sop-panel" id="sopPanel"></div>
-
-  <button onclick="window.location.href='review.html'">Cek Video Review</button>
-</div>
-
-<script>
-function showSOP() {
-  const sop = document.getElementById('sopPanel');
-  if (sop.innerHTML === "") {
-    sop.innerHTML = "JADILAH PEMBELI YANG BIJAK HIGH PRIVASI, JAGA KEAMANAN, DAN JADILAH SMART BUYER!";
-  } else {
-    sop.innerHTML = "";
-  }
-}
-</script>
+  <script>
+    function showSOP() {
+      const sop = document.getElementById("sopPanel");
+      if (sop.innerHTML === "") {
+        sop.innerHTML = "JADILAH PEMBELI YANG BIJAK HIGH PRIVASI — JAGA KEAMANAN & JADI SMART BUYER!";
+      } else {
+        sop.innerHTML = "";
+      }
+    }
+  </script>
 
 </body>
 </html>
